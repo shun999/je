@@ -24,6 +24,6 @@ __pycache__/
 *.npy
 
 # 大きいファイル
-AutoMl.ipynb
+解析ファイル置き場/AutoMl.ipynb
 
 
