@@ -1,31 +1,40 @@
-# 大きなデータ・ログ
-*.csv
-*.xlsx
-*.log
+# --- Python 環境 ---
+env3.12/
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
 *.pyd
 *.dll
+
+# --- 一時ファイル・ログ ---
+*.log
+*.tmp
+*.json
+*.tsv
+*.npy
+*.pkl
+*.npz
+*.csv
+*.xlsx
+
+# --- CatBoost 出力 ---
+catboost_info/
+**/catboost_info/
+**/tmp/
+
+# --- 分析結果・生成物 ---
+解析ファイル置き場/
+**/解析ファイル置き場/
+*.png
 *.ipynb
 *.joblib
 *.h5
+*.model
 
-# 仮想環境
-venv/
-env/
-env3.12/
-.env/
-.venv/
-
-# バイトコードキャッシュ
-__pycache__/
-*.pyc
-
-# Jupyter Notebook チェックポイント
-.ipynb_checkpoints/
-
-# OSファイル
+# --- その他 ---
 .DS_Store
-
-# 大きいファイル
-解析ファイル置き場/AutoMl.ipynb
+Thumbs.db
 
 
