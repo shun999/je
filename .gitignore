@@ -1,0 +1,39 @@
+# --- Python 環境 ---
+env3.12/
+.env/
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.dll
+
+# --- 一時ファイル・ログ ---
+*.log
+*.tmp
+*.json
+*.tsv
+*.npy
+*.pkl
+*.npz
+*.csv
+*.xlsx
+
+# --- CatBoost 出力 ---
+catboost_info/
+**/catboost_info/
+**/tmp/
+
+# --- 分析結果・生成物 ---
+解析ファイル置き場/AutoMl.ipynb
+*.png
+*.joblib
+*.h5
+*.model
+
+# --- その他 ---
+.DS_Store
+Thumbs.db
+
+
