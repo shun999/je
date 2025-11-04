@@ -2,11 +2,18 @@
 *.csv
 *.xlsx
 *.log
+*.pyd
+*.dll
+*.ipynb
+*.joblib
+*.h5
 
 # 仮想環境
 venv/
 env/
 env3.12/
+.env/
+.venv/
 
 # バイトコードキャッシュ
 __pycache__/
@@ -17,11 +24,6 @@ __pycache__/
 
 # OSファイル
 .DS_Store
-
-# 機械学習結果
-*.joblib
-*.pkl
-*.npy
 
 # 大きいファイル
 解析ファイル置き場/AutoMl.ipynb
