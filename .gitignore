@@ -6,6 +6,7 @@
 # 仮想環境
 venv/
 env/
+env3.12/
 
 # バイトコードキャッシュ
 __pycache__/
@@ -21,4 +22,8 @@ __pycache__/
 *.joblib
 *.pkl
 *.npy
+
+# 大きいファイル
+AutoMl.ipynb
+
 
