@@ -26,7 +26,6 @@ catboost_info/
 **/tmp/
 
 # --- 分析結果・生成物 ---
-解析ファイル置き場/AutoMl.ipynb
 *.png
 *.joblib
 *.h5
