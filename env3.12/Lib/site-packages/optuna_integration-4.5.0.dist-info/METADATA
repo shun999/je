@@ -1,0 +1,224 @@
+Metadata-Version: 2.4
+Name: optuna-integration
+Version: 4.5.0
+Summary: Integration libraries of Optuna.
+Project-URL: repository, https://github.com/optuna/optuna-integration
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: optuna
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: coverage; extra == "test"
+Requires-Dist: fakeredis[lua]; extra == "test"
+Requires-Dist: grpcio; extra == "test"
+Requires-Dist: protobuf>=5.28.1; extra == "test"
+Provides-Extra: checking
+Requires-Dist: black; extra == "checking"
+Requires-Dist: blackdoc; extra == "checking"
+Requires-Dist: hacking; extra == "checking"
+Requires-Dist: isort; extra == "checking"
+Requires-Dist: mypy; extra == "checking"
+Requires-Dist: types-PyYAML; extra == "checking"
+Requires-Dist: types-redis; extra == "checking"
+Requires-Dist: types-setuptools; extra == "checking"
+Requires-Dist: typing_extensions>=3.10.0.0; extra == "checking"
+Provides-Extra: document
+Requires-Dist: mlflow; extra == "document"
+Requires-Dist: pandas; extra == "document"
+Requires-Dist: scikit-learn>=0.24.2; extra == "document"
+Requires-Dist: scipy>=1.9.2; python_version >= "3.8" and extra == "document"
+Requires-Dist: sphinx; extra == "document"
+Requires-Dist: sphinx-notfound-page; extra == "document"
+Requires-Dist: sphinx_rtd_theme; extra == "document"
+Provides-Extra: allennlp
+Requires-Dist: allennlp; extra == "allennlp"
+Requires-Dist: jsonnet; extra == "allennlp"
+Requires-Dist: numpy<2.0.0; extra == "allennlp"
+Requires-Dist: psutil; extra == "allennlp"
+Provides-Extra: chainer
+Requires-Dist: chainer; extra == "chainer"
+Requires-Dist: numpy<2.0.0; extra == "chainer"
+Provides-Extra: chainermn
+Requires-Dist: chainermn; extra == "chainermn"
+Requires-Dist: numpy<2.0.0; extra == "chainermn"
+Provides-Extra: botorch
+Requires-Dist: botorch<0.10.0; extra == "botorch"
+Provides-Extra: catboost
+Requires-Dist: numpy<2.0.0; extra == "catboost"
+Requires-Dist: catboost; extra == "catboost"
+Provides-Extra: cma
+Requires-Dist: numpy<2.0.0; extra == "cma"
+Requires-Dist: cma; extra == "cma"
+Provides-Extra: comet
+Requires-Dist: comet_ml>=3.39.3; extra == "comet"
+Provides-Extra: dask
+Requires-Dist: distributed; extra == "dask"
+Provides-Extra: fastai
+Requires-Dist: fastai>=2.0.0; extra == "fastai"
+Provides-Extra: fastaiv2
+Requires-Dist: fastai>=2.0.0; extra == "fastaiv2"
+Provides-Extra: keras
+Requires-Dist: tensorflow; extra == "keras"
+Provides-Extra: lightgbm
+Requires-Dist: lightgbm; extra == "lightgbm"
+Requires-Dist: scikit-learn; extra == "lightgbm"
+Provides-Extra: mlflow
+Requires-Dist: mlflow; extra == "mlflow"
+Provides-Extra: mxnet
+Requires-Dist: mxnet; extra == "mxnet"
+Provides-Extra: pytorch-distributed
+Requires-Dist: gpytorch; extra == "pytorch-distributed"
+Provides-Extra: pytorch-distributed
+Requires-Dist: gpytorch; extra == "pytorch-distributed"
+Provides-Extra: pytorch-ignite
+Requires-Dist: pytorch-ignite; extra == "pytorch-ignite"
+Provides-Extra: pytorch-ignite
+Requires-Dist: pytorch-ignite; extra == "pytorch-ignite"
+Provides-Extra: pytorch-lightning
+Requires-Dist: lightning; extra == "pytorch-lightning"
+Provides-Extra: pytorch-lightning
+Requires-Dist: lightning; extra == "pytorch-lightning"
+Provides-Extra: shap
+Requires-Dist: numpy<2.0.0; extra == "shap"
+Requires-Dist: shap; extra == "shap"
+Provides-Extra: sklearn
+Requires-Dist: pandas; extra == "sklearn"
+Requires-Dist: scikit-learn; extra == "sklearn"
+Requires-Dist: scipy; extra == "sklearn"
+Provides-Extra: skorch
+Requires-Dist: skorch; extra == "skorch"
+Provides-Extra: tensorboard
+Requires-Dist: tensorboard; extra == "tensorboard"
+Requires-Dist: tensorflow; extra == "tensorboard"
+Provides-Extra: tensorflow
+Requires-Dist: tensorflow<=2.15.0; extra == "tensorflow"
+Provides-Extra: tfkeras
+Requires-Dist: tensorflow; extra == "tfkeras"
+Provides-Extra: wandb
+Requires-Dist: wandb; extra == "wandb"
+Provides-Extra: xgboost
+Requires-Dist: xgboost; extra == "xgboost"
+Dynamic: license-file
+
+# Optuna-Integration
+
+[![Python](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)](https://www.python.org)
+[![pypi](https://img.shields.io/pypi/v/optuna-integration.svg)](https://pypi.python.org/pypi/optuna-integration)
+[![conda](https://img.shields.io/conda/vn/conda-forge/optuna-integration.svg)](https://anaconda.org/conda-forge/optuna-integration)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/optuna/optuna-integration)
+[![Codecov](https://codecov.io/gh/optuna/optuna-integration/branch/main/graph/badge.svg)](https://codecov.io/gh/optuna/optuna-integration/branch/main)
+[![Read the Docs](https://readthedocs.org/projects/optuna-integration/badge/?version=stable)](https://optuna-integration.readthedocs.io/en/stable/)
+
+This package is an integration module of [Optuna](https://github.com/optuna/optuna), an automatic Hyperparameter optimization software framework.
+The modules in this package provide users with extended functionalities for Optuna in combination with third-party libraries such as PyTorch, sklearn, and TensorFlow.
+
+> [!NOTE]
+> You can find more information in [**our official documentations**](https://optuna-integration.readthedocs.io/en/stable/) and [**API reference**](https://optuna-integration.readthedocs.io/en/stable/reference/index.html).
+
+## Installation
+
+Optuna-Integration is available via [pip](https://pypi.org/project/optuna-integration/) and
+on [conda](https://anaconda.org/conda-forge/optuna-integration).
+
+```bash
+# PyPI
+$ pip install optuna-integration
+
+# Anaconda Cloud
+$ conda install -c conda-forge optuna-integration
+```
+
+> [!IMPORTANT]
+> As dependencies of all the modules are large and complicated, the commands above install only the common dependencies.
+> Dependencies for each module can be installed via pip.
+> For example, if you would like to install the dependencies of `optuna_integration.botorch` and `optuna_integration.lightgbm`, you can install them via:
+> ```shell
+> $ pip install optuna-integration[botorch,lightgbm]
+> ```
+
+> [!NOTE]
+> Optuna-Integration supports from Python 3.8 to Python 3.12.
+> Optuna Docker image is also provided at [DockerHub](https://hub.docker.com/r/optuna/optuna).
+
+## Integration Modules
+
+Here is the table of `optuna-integration` modules:
+
+|Third Party Library| Example |
+|:--|:--|
+|[BoTorch](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#botorch)| Unavailable |
+|[CatBoost](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#catboost)|[CatBoostPruningCallback](https://github.com/optuna/optuna-examples/blob/main/catboost/catboost_pruning.py)|
+|[Dask](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#dask)|[DaskStorage](https://github.com/optuna/optuna-examples/tree/main/dask/dask_simple.py)|
+|[FastAI](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#fast-ai)|[FastAIPruningCallback](https://github.com/optuna/optuna-examples/tree/main/fastai/fastai_simple.py)|
+|[Keras](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#keras)|[KerasPruningCallback](https://github.com/optuna/optuna-examples/blob/main/keras/keras_integration.py)|
+|[LightGBM](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#lightgbm)|[LightGBMPruningCallback](https://github.com/optuna/optuna-examples/blob/main/lightgbm/lightgbm_integration.py) / [LightGBMTuner](https://github.com/optuna/optuna-examples/blob/main/lightgbm/lightgbm_tuner_simple.py)|
+|[MLflow](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#mlflow)|[MLflowCallback](https://github.com/optuna/optuna-examples/blob/main/mlflow/keras_mlflow.py)|
+|[PyTorch Distributed](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#pytorch)|[TorchDistributedTrial](https://github.com/optuna/optuna-examples/blob/main/pytorch/pytorch_distributed_simple.py)|
+|[PyTorch Ignite](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#pytorch)|[PyTorchIgnitePruningHandler](https://github.com/optuna/optuna-examples/blob/main/pytorch/pytorch_ignite_simple.py)|
+|[PyTorch Lightning](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#pytorch)|[PyTorchLightningPruningCallback](https://github.com/optuna/optuna-examples/blob/main/pytorch/pytorch_lightning_simple.py)|
+|[pycma](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#pycma)|[PyCma Sampler](https://github.com/optuna/optuna-integration/blob/v4.4.0/optuna_integration/cma/cma.py#L44-L64)|
+|[SHAP](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#shap)|[SHAP Importance Evaluator](https://github.com/optuna/optuna-integration/blob/v4.4.0/optuna_integration/shap/shap.py#L29-L45)|
+|[scikit-learn](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#sklearn)|[OptunaSearchCV](https://github.com/optuna/optuna-examples/tree/main/sklearn/sklearn_optuna_search_cv_simple.py)|
+|[skorch](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#skorch)|[SkorchPruningCallback](https://github.com/optuna/optuna-examples/tree/main/pytorch/skorch_simple.py)|
+|[TensorBoard](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#tensorboard)|[TensorBoardCallback](https://github.com/optuna/optuna-examples/tree/main/tensorboard/tensorboard_simple.py)|
+|[tf.keras](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#tensorflow)|[TFKerasPruningCallback](https://github.com/optuna/optuna-examples/tree/main/tfkeras/tfkeras_integration.py)|
+|[Weights & Biases](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#wandb)|[WeightsAndBiasesCallback](https://github.com/optuna/optuna-examples/blob/main/wandb/wandb_integration.py)|
+|[XGBoost](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#xgboost)|[XGBoostPruningCallback](https://github.com/optuna/optuna-examples/tree/main/xgboost/xgboost_integration.py)|
+|[AllenNLP](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#allennlp)*|[AllenNLPPruningCallback](https://github.com/optuna/optuna-examples/blob/main/allennlp/allennlp_simple.py)|
+|[Chainer](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#chainer)*|[ChainerPruningExtension](https://github.com/optuna/optuna-examples/tree/main/chainer/chainer_integration.py)|
+|[ChainerMN](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#chainermn)* | [ChainerMNStudy](https://github.com/optuna/optuna-examples/tree/main/chainer/chainermn_simple.py) |
+|[MXNet](https://optuna-integration.readthedocs.io/en/stable/reference/index.html#mxnet)*|Unavailable|
+
+> [!WARNING]
+> `*` shows deprecated modules and they might be removed in the future.
+
+## Communication
+
+* [GitHub Discussions] for questions.
+* [GitHub Issues] for bug reports and feature requests.
+
+[GitHub Discussions]: https://github.com/optuna/optuna-integration/discussions
+
+[GitHub issues]: https://github.com/optuna/optuna-integration/issues
+
+## Contribution
+
+Any contributions to Optuna-Integration are more than welcome!
+
+For general guidelines how to contribute to the project, take a look at [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+## Reference
+
+If you use Optuna in one of your research projects, please cite [our KDD paper](https://doi.org/10.1145/3292500.3330701) "Optuna: A Next-generation Hyperparameter Optimization Framework":
+
+<details open>
+<summary>BibTeX</summary>
+
+```bibtex
+@inproceedings{akiba2019optuna,
+  title={{O}ptuna: A Next-Generation Hyperparameter Optimization Framework},
+  author={Akiba, Takuya and Sano, Shotaro and Yanase, Toshihiko and Ohta, Takeru and Koyama, Masanori},
+  booktitle={The 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  pages={2623--2631},
+  year={2019}
+}
+```
+</details>

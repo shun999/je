@@ -1,0 +1,24 @@
+# 大きなデータ・ログ
+*.csv
+*.xlsx
+*.log
+
+# 仮想環境
+venv/
+env/
+
+# バイトコードキャッシュ
+__pycache__/
+*.pyc
+
+# Jupyter Notebook チェックポイント
+.ipynb_checkpoints/
+
+# OSファイル
+.DS_Store
+
+# 機械学習結果
+*.joblib
+*.pkl
+*.npy
+
