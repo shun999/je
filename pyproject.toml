@@ -92,6 +92,7 @@ dependencies = [
     "pydantic==2.12.3",
     "pydantic-core==2.41.4",
     "pygments==2.19.2",
+    "pymc>=5.27.0",
     "pyparsing==3.2.5",
     "python-dateutil==2.9.0.post0",
     "python-dotenv==1.2.1",
