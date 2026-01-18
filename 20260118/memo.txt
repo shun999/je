@@ -1,0 +1,7 @@
+"F:\Je respire\トレーニング後\20260114\A20260114132554_Hb_CBox32_Total.csv"
+"F:\Je respire\トレーニング後\yanaze_02_01[].txt"
+"F:\Je respire\トレーニング後\merged.xlsx"
+
+C:\Users\human1\OneDrive - 埼玉大学\デスクトップ\test\A20260114132554_Hb_CBox32_Total.csv
+C:\Users\human1\OneDrive - 埼玉大学\デスクトップ\test\yanaze_02_01[].txt
+C:\Users\human1\OneDrive - 埼玉大学\デスクトップ\test\merged.xlsx
