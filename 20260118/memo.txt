@@ -5,3 +5,76 @@
 C:\Users\human1\OneDrive - 埼玉大学\デスクトップ\test\A20260114132554_Hb_CBox32_Total.csv
 C:\Users\human1\OneDrive - 埼玉大学\デスクトップ\test\yanaze_02_01[].txt
 C:\Users\human1\OneDrive - 埼玉大学\デスクトップ\test\merged.xlsx
+
+
+ segment      from        to  duration_s    
+       0     START  Marker:0        26.0
+       1  Marker:0  Marker:1        45.0
+       2  Marker:1  Marker:2        31.0
+       3  Marker:2  Marker:3        63.0
+       4  Marker:3  Marker:4        29.0
+       5  Marker:4  Marker:5        51.0
+       6  Marker:5  Marker:6        66.0
+       7  Marker:6  Marker:7        25.0
+       8  Marker:7  Marker:8        19.0
+       9  Marker:8  Marker:9        22.0
+      10  Marker:9 Marker:10        39.0
+      11 Marker:10 Marker:11        31.0
+      12 Marker:11 Marker:12        13.0
+      13 Marker:12 Marker:13        27.0
+      14 Marker:13 Marker:14        64.0
+      15 Marker:14 Marker:15        46.0
+      16 Marker:15 Marker:16        24.0
+      17 Marker:16 Marker:17        30.0
+      18 Marker:17 Marker:18        16.0
+      19 Marker:18 Marker:19        31.0
+      20 Marker:19 Marker:20        47.0
+      21 Marker:20 Marker:21        38.0
+      22 Marker:21 Marker:22        23.0
+      23 Marker:22 Marker:23        21.0
+      24 Marker:23 Marker:24        25.0
+      25 Marker:24 Marker:25        46.0
+      26 Marker:25 Marker:26        56.0
+      27 Marker:26 Marker:27       121.0
+      28 Marker:27 Marker:28        43.0
+      29 Marker:28 Marker:29        69.0
+      30 Marker:29 Marker:30       137.0
+      31 Marker:30 Marker:31        47.0
+      32 Marker:31 Marker:32        39.0
+      33 Marker:32 Marker:33        45.0
+
+       segment      from        to  duration_s
+       0     START  Marker:0        34.0
+       1  Marker:0  Marker:1        45.0
+       2  Marker:1  Marker:2        31.0
+       3  Marker:2  Marker:3        63.0
+       4  Marker:3  Marker:4        29.0
+       5  Marker:4  Marker:5        52.0
+       6  Marker:5  Marker:6        65.0
+       7  Marker:6  Marker:7        25.0
+       8  Marker:7  Marker:8        19.0
+       9  Marker:8  Marker:9        22.0
+      10  Marker:9 Marker:10        39.0
+      11 Marker:10 Marker:11        30.0
+      12 Marker:11 Marker:12        14.0
+      13 Marker:12 Marker:13        27.0
+      14 Marker:13 Marker:14        64.0
+      15 Marker:14 Marker:15        46.0
+      16 Marker:15 Marker:16        24.0
+      17 Marker:16 Marker:17        30.0
+      18 Marker:17 Marker:18        16.0
+      19 Marker:18 Marker:19        30.0
+      20 Marker:19 Marker:20        48.0
+      21 Marker:20 Marker:21        38.0
+      22 Marker:21 Marker:22        23.0
+      23 Marker:22 Marker:23        21.0
+      24 Marker:23 Marker:24        25.0
+      25 Marker:24 Marker:25        46.0
+      26 Marker:25 Marker:26        56.0
+      27 Marker:26 Marker:27       120.0
+      28 Marker:27 Marker:28        44.0
+      29 Marker:28 Marker:29        69.0
+      30 Marker:29 Marker:30       137.0
+      31 Marker:30 Marker:31        47.0
+      32 Marker:31 Marker:32        39.0
+      33 Marker:32 Marker:33        45.0
