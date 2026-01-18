@@ -357,40 +357,40 @@ def main():
 
     # user chooses markers to delete
     # user chooses markers to delete (CSV / TXT / BOTH)
-mode = input("\nDelete markers from which source? [1]=CSV [2]=TXT [3]=BOTH  (default=3): ").strip()
-if mode not in {"1", "2", "3", ""}:
-    mode = "3"
-if mode == "":
-    mode = "3"
+    mode = input("\nDelete markers from which source? [1]=CSV [2]=TXT [3]=BOTH  (default=3): ").strip()
+    if mode not in {"1", "2", "3", ""}:
+        mode = "3"
+    if mode == "":
+        mode = "3"
 
-s_csv = input("Delete marker numbers for CSV (e.g. 2 5) | empty = none : ").strip()
-del_csv = [int(x) for x in s_csv.split()] if s_csv else []
+    s_csv = input("Delete marker numbers for CSV (e.g. 2 5) | empty = none : ").strip()
+    del_csv = [int(x) for x in s_csv.split()] if s_csv else []
 
-s_txt = input("Delete marker numbers for TXT (e.g. 2 5) | empty = none : ").strip()
-del_txt = [int(x) for x in s_txt.split()] if s_txt else []
+    s_txt = input("Delete marker numbers for TXT (e.g. 2 5) | empty = none : ").strip()
+    del_txt = [int(x) for x in s_txt.split()] if s_txt else []
 
-# apply deletion + reindex separately
-if mode in {"1", "3"} and del_csv:
-    csv_dfs2 = []
-    for p, df in csv_dfs:
-        df2 = delete_markers_and_reindex(df, del_csv, marker_col="Marker")
-        csv_dfs2.append((p, df2))
-    csv_dfs = csv_dfs2
+    # apply deletion + reindex separately
+    if mode in {"1", "3"} and del_csv:
+        csv_dfs2 = []
+        for p, df in csv_dfs:
+            df2 = delete_markers_and_reindex(df, del_csv, marker_col="Marker")
+            csv_dfs2.append((p, df2))
+        csv_dfs = csv_dfs2
 
-if mode in {"2", "3"} and del_txt:
-    txt_df = delete_markers_and_reindex(txt_df, del_txt, marker_col="Marker")
+    if mode in {"2", "3"} and del_txt:
+        txt_df = delete_markers_and_reindex(txt_df, del_txt, marker_col="Marker")
 
-# show intervals again after deletion
-if (mode in {"1", "3"} and del_csv) or (mode in {"2", "3"} and del_txt):
-    print("\n--- Marker intervals (seconds) AFTER deletion/reindex ---")
-    for p, df in csv_dfs:
-        itv = compute_marker_intervals(df, time_col="Time", marker_col="Marker")
-        print(f"\n[CSV] {p.name}")
-        print(itv.to_string(index=False))
+    # show intervals again after deletion
+    if (mode in {"1", "3"} and del_csv) or (mode in {"2", "3"} and del_txt):
+        print("\n--- Marker intervals (seconds) AFTER deletion/reindex ---")
+        for p, df in csv_dfs:
+            itv = compute_marker_intervals(df, time_col="Time", marker_col="Marker")
+            print(f"\n[CSV] {p.name}")
+            print(itv.to_string(index=False))
 
-    itv_txt2 = compute_marker_intervals(txt_df, time_col="TIME", marker_col="Marker")
-    print(f"\n[TXT] {txt_path.name}")
-    print(itv_txt2.to_string(index=False))
+        itv_txt2 = compute_marker_intervals(txt_df, time_col="TIME", marker_col="Marker")
+        print(f"\n[TXT] {txt_path.name}")
+        print(itv_txt2.to_string(index=False))
 
     # warn if counts differ
     def _count_events(d):
