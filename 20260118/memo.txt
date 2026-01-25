@@ -7,6 +7,9 @@ C:\Users\human1\OneDrive - 埼玉大学\デスクトップ\test\yanaze_02_01[].t
 C:\Users\human1\OneDrive - 埼玉大学\デスクトップ\test\merged.xlsx
 
 
+"F:\Je respire\トレーニング後\統合データ\merged_.xlsx"
+
+
  segment      from        to  duration_s    
        0     START  Marker:0        26.0
        1  Marker:0  Marker:1        45.0
